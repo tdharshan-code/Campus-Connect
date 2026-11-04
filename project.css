@@ -1,0 +1,256 @@
+
+/* Basic Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #222;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #171744;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 span {
+    color: #ffb703;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #ffb703;
+}
+
+/* Home Section */
+.hero {
+    min-height: 380px;
+    background: linear-gradient(120deg, #252568, #6254d9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #171744;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Common Sections */
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #252568;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Event Cards */
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+}
+
+.event-image {
+    background-color: #e9e8ff;
+    font-size: 45px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.event-card h3 {
+    color: #252568;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #5145cd;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #30268f;
+}
+
+/* Registration Form */
+.registration {
+    background-color: #eaeaff;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #5145cd;
+}
+
+/* Confirmation */
+.confirmation {
+    max-width: 450px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #252568;
+    display: none;
+}
+
+/* Organizer Dashboard */
+.organizer {
+    background-color: white;
+}
+
+.dashboard-card {
+    display: inline-block;
+    background-color: #eeeeff;
+    padding: 25px 45px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.dashboard-card h3 {
+    color: #5145cd;
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.organizer-title {
+    margin: 35px 0 20px;
+    color: #252568;
+}
+
+#newEventList {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #171744;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Mobile Screen */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+}
